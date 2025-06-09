@@ -6,7 +6,7 @@ def fitness_function(x):
 
 def mfo(function, dimension, n_moths, max_iter, lb, ub):
     moths_position = np.random.uniform(lb, ub, (n_moths, dimension))
-    moths_position = np.clip(moths_position, lb, ub)
+    # moths_position = np.clip(moths_position, lb, ub)
     moths_fitness = np.array([function(i) for i in moths_position])
 
     flame_num = n_moths
