@@ -33,12 +33,6 @@ def mfo(function, dimension, n_moths, max_iter, lb, ub):
 
     return best_moth, best_score
 
-# dimension = 2
-# n_moths = 3
-# max_iter= 3
-# lb = -10
-# ub = 10
-# moths_position = np.array([[4, 3], [1, -2], [0.5, 0.5]])
 pos, fitness = mfo(fitness_function, 2, 5, 1000, -10, 10)
 print(pos)
 print(fitness)
